@@ -18,8 +18,10 @@ class Shoe
 
 end
 
-brands = ["Uggs", "Rainbow"]
+Shoe::BRANDS.clear
+brands = ["Uggs", "Rainbow", "Nike", "Nike"]
 brands.each do |brand|
   Shoe.new(brand)
+  binding.pry
 end
-binding.pry
+
