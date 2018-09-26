@@ -1,3 +1,5 @@
+reqire 'pry'
+
 class Shoe
   attr_accessor :color, :size, :material, :condition
   attr_reader :brand
@@ -15,3 +17,9 @@ class Shoe
   end
 
 end
+
+brands = ["Uggs", "Rainbow"]
+brands.each do |brand|
+  Shoe.new(brand)
+end
+binding.pry
